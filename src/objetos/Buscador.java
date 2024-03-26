@@ -16,7 +16,7 @@ public class Buscador {
 			while (scanner.hasNextLine()) {
 	            String linha = scanner.nextLine();
 	            
-	            if(linha.contains(valor))
+	            if(linha.toUpperCase().contains(valor.toUpperCase()))
 	            	System.out.println("Valor " + valor + " Encontrado na linha " + i + " no Arquivo " + nomeArquivo);
 	            
 	            i++;
